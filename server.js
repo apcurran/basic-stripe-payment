@@ -15,9 +15,7 @@ app.post("/api/create-payment-intent", async (req, res) => {
       currency: "usd"
     });
 
-    res.send({
-      clientSecret: paymentIntent.client_secret
-    });
+    res.send({ clientSecret: paymentIntent.client_secret });
 });
 
 app.listen(PORT, () => console.log(`Server listening on port, ${PORT}.`));
