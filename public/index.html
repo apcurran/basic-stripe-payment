@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/scripts/client.js"></script>
+    <title>Stripe</title>
+</head>
+<body>
+    <h1>Payment Page</h1>
+    <form id="payment-form">
+        <div id="card-element"></div>
+
+        <button id="submit" type="submit">Pay</button>
+        <p id="card-errors" role="alert"></p>
+        <p class="result-message hidden"></p>
+    </form>
+</body>
+</html>
